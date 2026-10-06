@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Hagras | Performance Media Buyer for Local Brands</title>
+<meta name="description" content="Junior performance media buyer focused on local brands in Egypt: F&B, cloud kitchens, clinics, retail.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Plus Jakarta Sans','Inter',sans-serif;background:#0B0F17}
+.glass{backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(15,23,42,.8);border:1px solid #1e293b}
+.mint{color:#34D399}
+.btn{background:#10B981;color:#04130d;font-weight:700;transition:background .2s,transform .2s}.btn:hover{background:#34D399}.btn:active{transform:scale(.98)}
+.card{transition:opacity .35s,transform .35s,border-color .25s}
+.card.hide{opacity:0;transform:scale(.95)}
+.card:hover{transform:translateY(-4px);border-color:#10B981}
+#modal{transition:opacity .25s}#modal .panel{transition:transform .3s}
+#modal.closed{opacity:0;pointer-events:none}#modal.closed .panel{transform:translateY(24px) scale(.97)}
+.fbtn.on{background:#10B981;color:#04130d;border-color:#10B981}
+:focus-visible{outline:2px solid #34D399;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="text-slate-300 antialiased overflow-x-hidden">
+
+<header class="fixed top-0 inset-x-0 z-40 glass">
+ <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="#top" class="font-extrabold text-white text-lg">Mohamed <span class="mint">Hagras</span></a>
+  <nav class="hidden md:flex gap-6 text-sm font-medium">
+   <a href="#about" class="hover:text-white">About</a><a href="#stats" class="hover:text-white">Stats</a><a href="#work" class="hover:text-white">Case Studies</a><a href="#stack" class="hover:text-white">Tech Stack</a><a href="#contact" class="hover:text-white">Contact</a>
+  </nav>
+  <div class="flex items-center gap-2">
+   <a href="https://wa.me/201100768080" target="_blank" rel="noopener" class="btn text-sm px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp mr-1"></i>WhatsApp</a>
+   <button id="burger" aria-label="Menu" class="md:hidden w-10 h-10 rounded-lg border border-slate-700 text-white"><i class="fa-solid fa-bars"></i></button>
+  </div>
+ </div>
+ <nav id="mnav" class="hidden md:hidden px-4 pb-4 flex-col gap-3 text-sm font-medium">
+  <a href="#about">About</a><a href="#stats">Stats</a><a href="#work">Case Studies</a><a href="#stack">Tech Stack</a><a href="#contact">Contact</a>
+ </nav>
+</header>
+
+<main id="top">
+<section class="max-w-6xl mx-auto px-4 pt-32 pb-20">
+ <span class="inline-flex items-center gap-2 text-xs sm:text-sm px-3 py-1.5 rounded-full glass text-emerald-300"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>Open to freelance &amp; full-time roles</span>
+ <h1 class="mt-6 text-4xl sm:text-6xl font-extrabold text-white leading-tight max-w-4xl">I help local Egyptian brands turn ad spend into real orders.</h1>
+ <p class="mt-6 text-lg text-slate-400 max-w-2xl">Junior performance media buyer with 6 months of hands-on experience in F&amp;B, cloud kitchens, dental clinics, mobile retail and butcheries, with a focus on the business behind every campaign.</p>
+ <div class="mt-8 flex flex-wrap gap-3">
+  <a href="#work" class="btn px-6 py-3 rounded-xl">Explore Case Studies</a>
+  <a href="#contact" class="glass text-white font-semibold px-6 py-3 rounded-xl hover:border-emerald-400">Get in Touch</a>
+ </div>
+ <div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4" id="heroStats"></div>
+</section>
+
+<section id="about" class="max-w-6xl mx-auto px-4 py-20">
+ <div class="grid lg:grid-cols-2 gap-10">
+  <div>
+   <h2 class="text-3xl font-extrabold text-white">About me</h2>
+   <p class="mt-4 leading-relaxed">I'm Mohamed Medhat Hagras, a junior performance media buyer with 6 months of hands-on experience. I work exclusively with local brands and businesses in Egypt: restaurants, cloud kitchens, dental clinics, mobile and accessories shops, and butcheries.</p>
+   <p class="mt-3 leading-relaxed">Running ads is the easy part. I'm building a strong business and marketing mindset: strategic positioning, offers that make sense for the customer, and unit economics, so every pound of spend is judged by what it brings back to the owner.</p>
+  </div>
+  <div class="grid grid-cols-2 gap-3" id="skills"></div>
+ </div>
+</section>
+
+<section id="stats" class="max-w-6xl mx-auto px-4 py-20">
+ <h2 class="text-3xl font-extrabold text-white">Global stats dashboard</h2>
+ <p class="mt-2 text-slate-400">Aug 27 – Oct 04, 2026 · 11 local brands</p>
+ <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-4" id="dash"></div>
+</section>
+
+<section id="work" class="max-w-6xl mx-auto px-4 py-20">
+ <h2 class="text-3xl font-extrabold text-white">Case studies</h2>
+ <p class="mt-2 text-slate-400">Open any card for metrics and analysis.</p>
+ <div class="mt-6 flex flex-wrap gap-2" id="filters"></div>
+ <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="grid"></div>
+</section>
+
+<section id="stack" class="max-w-6xl mx-auto px-4 py-20">
+ <h2 class="text-3xl font-extrabold text-white">Tech stack &amp; certifications</h2>
+ <div class="mt-6 grid md:grid-cols-3 gap-4" id="tools"></div>
+</section>
+
+<section id="contact" class="max-w-4xl mx-auto px-4 py-20">
+ <div class="glass rounded-3xl p-6 sm:p-10">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-white text-center">Let's grow your brand together</h2>
+  <div class="mt-8 grid sm:grid-cols-3 gap-3">
+   <a href="https://wa.me/201100768080" target="_blank" rel="noopener" class="btn rounded-xl py-4 text-center"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+   <a href="mailto:mohamedmedhat7292002@gmail.com" class="glass text-white font-bold rounded-xl py-4 text-center hover:border-emerald-400"><i class="fa-solid fa-envelope mr-2"></i>Email</a>
+   <a href="https://www.linkedin.com/in/mohamed-hagras-70b840259?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="glass text-white font-bold rounded-xl py-4 text-center hover:border-emerald-400"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
+  </div>
+  <form id="form" class="mt-8 grid gap-3">
+   <div class="grid sm:grid-cols-2 gap-3">
+    <input name="name" required placeholder="Name" autocomplete="name" class="bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500">
+    <input name="email" type="email" required placeholder="Email" autocomplete="email" class="bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500">
+   </div>
+   <input name="phone" type="tel" required placeholder="Phone / WhatsApp" autocomplete="tel" class="bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500">
+   <textarea name="message" required rows="4" placeholder="Tell me about your business and goals" class="bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500"></textarea>
+   <button id="sbtn" class="btn rounded-xl py-3 disabled:opacity-60">Send message</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="border-t border-slate-800 py-8">
+ <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+  <p>© <span id="yr"></span> Mohamed Hagras. All rights reserved.</p>
+  <div class="flex gap-5"><a href="#about" class="hover:text-white">About</a><a href="#work" class="hover:text-white">Case Studies</a><a href="#contact" class="hover:text-white">Contact</a></div>
+  <a href="#top" class="btn w-10 h-10 rounded-full flex items-center justify-center" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+ </div>
+</footer>
+
+<div id="modal" class="closed fixed inset-0 z-50 flex items-end sm:items-center justify-center p-3 bg-slate-950/70 backdrop-blur-md" role="dialog" aria-modal="true">
+ <div class="panel bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative">
+  <button id="mx" aria-label="Close" class="absolute top-4 right-4 w-10 h-10 rounded-full border border-slate-700 text-white hover:bg-slate-800"><i class="fa-solid fa-xmark"></i></button>
+  <div id="mbody"></div>
+ </div>
+</div>
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] w-[90%] max-w-md text-center glass border-emerald-500/50 text-white px-5 py-3 rounded-xl opacity-0 pointer-events-none transition-opacity" role="status"></div>
+
+<script>
+const SCRIPT_URL='https://script.google.com/macros/s/AKfycbyaXdStLhxu_I5xUHSy1rV6xV9RAB3D8ia2g91RrJIl62Z4w7I16BXWaylXGi6De_kN/exec';
+const $=s=>document.querySelector(s), f=n=>n.toLocaleString('en-US');
+const CATS={all:'All',fnb:'F&B & Cloud Kitchens',health:'Healthcare',retail:'Retail & Electronics'};
+const A=[
+{n:'El Baz Butchery',c:'fnb',cat:'Butchery & Food Retail',loc:'Hay El Gamaa, Mansoura',sp:5893.12,im:152743,cl:4504,cpc:1.31,ctr:10.04,cpr:'EGP 3.88 – 4.49 / conversation',hl:'10.04% CTR (portfolio peak) and the lowest messaging CPA.',st:'Direct messaging campaigns with high visual proof for premium cuts and local delivery.',tk:'Showing the product clearly is what makes people message.'},
+{n:'Hanyah Chicken',c:'fnb',cat:'Poultry & Processed Foods',loc:'Hay El Gamaa, Mansoura',sp:7730.43,im:254836,cl:6292,cpc:1.23,cpr:'From EGP 5.24 / conversation',hl:'Top traffic efficiency at EGP 1.23 per click.',st:'Direct messaging funnels targeting university-area residents and households.',tk:'Targeting the people who live closest keeps the cost per click lowest.'},
+{n:'Koshary Zizo',c:'fnb',cat:'Multi-Branch Restaurant Chain',loc:'Mansoura branches',sp:1315.79,im:44135,cl:748,cpc:1.76,ctr:5.23,cpr:'EGP 5.48 / conversation',hl:'5.23% CTR with messaging CPA at EGP 5.48.',st:'Hyper-local radius campaigns driving instant takeaway and delivery orders.',tk:'Branch-level radius targeting works even on a very small budget.'},
+{n:'EL Gezara',c:'fnb',cat:'Butchery & Cloud Kitchen',loc:'Belqas, Dakahlia',sp:13328.24,im:705492,cl:7326,cpc:1.82,ctr:3.72,cpr:'EGP 1.82 / link click',hl:'High-volume reach and 3.72% CTR.',st:'Local awareness combined with direct inquiry funnels for cooked and raw meats.',tk:'Awareness first, then an easy way to ask, covers both raw and cooked customers.'},
+{n:'Patsha Group',c:'fnb',cat:'Multi-Concept Restaurant Group (Patsha, Crepe Kitchen, Patsha Fil Khafeef)',loc:'Mansoura & Ras El Bar',sp:17381.39,im:552323,cl:8637,cpc:2.01,ctr:5.14,cpr:'EGP 6.96 – 8.94 / conversation',hl:'5.14% CTR, messaging CPA EGP 6.96 – 8.94.',st:'Multi-brand retargeting and seasonal campaigns across dine-in and coastal branches.',tk:'Each concept needs its own message, and seasonal timing matters at the coast.'},
+{n:'Shawshi',c:'fnb',cat:'Casual Dining Restaurant',loc:'Meet Ghamr, Dakahlia',sp:35191.17,im:1322282,cl:7625,cpc:4.62,hl:'Largest budget managed: 27% of portfolio spend.',st:'Testing offer variations, Reels creatives and high-scale local reach.',tk:'At higher spend, offers and creatives need steady testing to keep costs under control.'},
+{n:"Buck's Delta",c:'fnb',cat:'Multi-Branch Restaurant',loc:'New Damietta',sp:17748.03,im:394749,cl:6229,cpc:2.84,cpr:'EGP 5.11 / conversation',hl:'Controlled scaling with EGP 5.11 messaging CPA. (Combined total of 2 accounts.)',st:'Multi-account regional coverage and menu expansion funnels.',tk:'Scaling in small steps protected the cost per conversation.'},
+{n:'The Clash',c:'fnb',cat:'Cloud Kitchen',loc:'New Damietta',sp:9485.30,im:323268,cl:4176,cpc:2.27,cpr:'EGP 2.27 / link click',hl:'4,100+ clicks and direct orders on a tight budget.',st:'Placement optimization focused on online delivery hours.',tk:'Matching ads to ordering hours makes a small budget work harder.'},
+{n:'ZAD',c:'health',cat:'Healthcare & Dental Clinic (2 branches)',loc:'Hay El Gamaa (Mansoura) & Meniet El Nasr',sp:12641.25,im:403301,cl:3541,cpc:3.57,cpr:'EGP 3.57 / link click',hl:'Stable lead flow and appointment bookings for dental services.',st:'Trust-building video ads and direct message booking setup.',tk:'For clinics, trust comes before price, and booking should take one message.'},
+{n:'El Salab Hospital',c:'health',cat:'Healthcare & Hospital Recruitment',loc:'Mansoura',sp:1130.15,im:37421,cl:496,cpc:2.28,ctr:6.53,cpr:'EGP 5.83 / hiring conversation',hl:'6.53% CTR, hiring messaging CPA at EGP 5.83.',st:'Targeted hiring and service lead acquisition funnels.',tk:'A clear role and a direct message path attract serious applicants.'},
+{n:'Fasel Shahn',c:'retail',cat:'Mobile & Accessories Retail',loc:'El Mashaya, Mansoura',sp:8771.93,im:221865,cl:2014,cpc:4.36,ctr:4.74,cpr:'EGP 7.17 / conversation',hl:'4.74% CTR, messaging CPA at EGP 7.17.',st:'Highlighting gadget offers and fast local inquiries.',tk:'Specific offers on specific products bring buyers who are ready to ask about price.'}
+];
+const ctrOf=a=>a.ctr??(a.cl/a.im*100);
+const egp=n=>'EGP '+n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+const KP=[['EGP',130616.8,'Total Managed Spend',1,'fa-wallet'],['',4412415,'Total Impressions',0,'fa-eye'],['',51588,'Total Link Clicks',0,'fa-arrow-pointer'],['%',3.75,'Weighted CTR (clicks all)',2,'fa-percent'],['EGP',2.53,'Blended CPC',2,'fa-coins']];
+function counter(el,v,d,pre,suf){const T=1400,t0=performance.now();(function s(t){const p=Math.min((t-t0)/T,1),e=1-Math.pow(1-p,3);el.textContent=pre+(v*e).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d})+suf;if(p<1)requestAnimationFrame(s)})(t0)}
+function kpis(box,keys){box.innerHTML=keys.map(i=>{const k=KP[i];return `<div class="glass rounded-2xl p-5"><i class="fa-solid ${k[4]} mint"></i><p class="mt-3 text-2xl sm:text-3xl font-extrabold text-white" data-i="${i}">0</p><p class="text-sm text-slate-400 mt-1">${k[2]}</p></div>`}).join('');
+ const io=new IntersectionObserver(es=>{if(es[0].isIntersecting){box.querySelectorAll('[data-i]').forEach(e=>{const k=KP[e.dataset.i];counter(e,k[1],k[3],k[0]==='EGP'?'EGP ':'',k[0]==='%'?'%':'')});io.disconnect()}});io.observe(box)}
+kpis($('#heroStats'),[0,1,2,4]);kpis($('#dash'),[0,1,2,3,4]);
+$('#skills').innerHTML=[['fa-brands fa-meta','Meta Ads Manager'],['fa-brands fa-tiktok','TikTok Ads Manager'],['fa-solid fa-robot','AI prompting'],['fa-solid fa-film','UGC video editing'],['fa-solid fa-chart-pie','Unit economics'],['fa-solid fa-chess','Strategic positioning']].map(s=>`<div class="glass rounded-xl p-4 flex items-center gap-3"><i class="${s[0]} mint w-5 text-center"></i><span class="text-white text-sm font-semibold">${s[1]}</span></div>`).join('');
+const STACK=[['Ad Platforms','fa-bullhorn',['Meta Ads Manager (Facebook & Instagram Ads)','TikTok Ads Manager']],['AI & Prompt Engineering','fa-robot',['ChatGPT: ad copywriting, creative strategy, persona profiling & prompting','Generative AI integration']],['Content & Creative Suite','fa-photo-film',['DaVinci Resolve: UGC video editing & visual hooks','Canva','Microsoft Office Suite']]];
+$('#tools').innerHTML=STACK.map(g=>`<div class="glass rounded-2xl p-5"><i class="fa-solid ${g[1]} mint"></i><h3 class="mt-3 font-bold text-white">${g[0]}</h3><ul class="mt-3 space-y-2 text-sm text-slate-400">${g[2].map(x=>`<li class="flex gap-2"><i class="fa-solid fa-check mint mt-1 text-xs"></i><span>${x}</span></li>`).join('')}</ul></div>`).join('')+`<div class="glass rounded-2xl p-5 md:col-span-3 border-emerald-500/40 flex gap-4 items-start"><i class="fa-solid fa-award mint text-2xl mt-1"></i><div><p class="text-xs text-emerald-300">Certification</p><h3 class="font-bold text-white">Certified AI Prompt Engineer</h3><p class="mt-1 text-sm text-slate-400">Completed the official "One Million AI Prompters" initiative course, with proven mastery in prompt engineering and interacting with AI models.</p></div></div>`;
+$('#filters').innerHTML=Object.entries(CATS).map(([k,v],i)=>`<button data-k="${k}" class="fbtn ${i?'':'on'} border border-slate-700 rounded-full px-4 py-2 text-sm font-semibold hover:border-emerald-400">${v}</button>`).join('');
+$('#grid').innerHTML=A.map((a,i)=>`<article data-c="${a.c}" class="card glass rounded-2xl p-5 flex flex-col">
+ <h3 class="text-lg font-bold text-white">${a.n}</h3>
+ <p class="mt-1 text-xs text-emerald-300">${a.cat}</p>
+ <p class="mt-1 text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i>${a.loc}</p>
+ <div class="mt-4 grid grid-cols-3 gap-2 text-sm"><div><p class="text-slate-500 text-xs">Spend</p><p class="font-semibold text-white">${(a.sp/1000).toFixed(1)}K</p></div><div><p class="text-slate-500 text-xs">CTR</p><p class="font-semibold mint">${ctrOf(a).toFixed(2)}%</p></div><div><p class="text-slate-500 text-xs">CPC</p><p class="font-semibold text-white">${a.cpc.toFixed(2)}</p></div></div>
+ <p class="mt-4 text-sm text-slate-400 flex-1">${a.hl}</p>
+ <button data-i="${i}" class="open btn mt-5 text-sm rounded-xl py-2.5">View Analysis &amp; Metrics</button></article>`).join('');
+$('#filters').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('.fbtn').forEach(x=>x.classList.toggle('on',x===b));
+ document.querySelectorAll('#grid .card').forEach(c=>{const show=b.dataset.k==='all'||c.dataset.c===b.dataset.k;if(show){c.style.display='';requestAnimationFrame(()=>c.classList.remove('hide'))}else{c.classList.add('hide');setTimeout(()=>{if(c.classList.contains('hide'))c.style.display='none'},350)}})};
+const M=$('#modal');
+function openM(i){const a=A[i];
+ const tile=(l,v)=>`<div class="bg-slate-800/60 rounded-xl p-3"><p class="text-xs text-slate-400">${l}</p><p class="font-bold text-white mt-1 text-sm sm:text-base">${v}</p></div>`;
+ $('#mbody').innerHTML=`<p class="text-xs text-emerald-300 pr-12">${a.cat}</p><h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-2 pr-12">${a.n}</h3><p class="text-sm text-slate-500 mt-1"><i class="fa-solid fa-location-dot mr-1"></i>${a.loc}</p>
+ <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">${tile('Spend',egp(a.sp))}${tile('Impressions',f(a.im))}${tile('Link Clicks',f(a.cl))}${tile('CPC',egp(a.cpc))}${tile('CTR',ctrOf(a).toFixed(2)+'%')}${tile('Cost Per Result',a.cpr)}</div>
+ <ul class="mt-7 space-y-3 text-sm leading-relaxed">
+  <li><i class="fa-solid fa-trophy mint mr-2"></i><b class="text-white">Highlights:</b> ${a.hl}</li>
+  <li><i class="fa-solid fa-chess mint mr-2"></i><b class="text-white">Strategy:</b> ${a.st}</li>
+ </ul>
+ <div class="mt-6 rounded-xl p-4 bg-emerald-500/10 border border-emerald-500/30 text-sm"><b class="text-emerald-300">Takeaway:</b> ${a.tk}</div>
+ <p class="mt-4 text-xs text-slate-500">Aug 27 – Oct 04, 2026. CTR is the reported all-clicks CTR where available, otherwise link clicks ÷ impressions.</p>`;
+ M.classList.remove('closed');document.body.style.overflow='hidden';$('#mx').focus()}
+function closeM(){M.classList.add('closed');document.body.style.overflow=''}
+$('#grid').onclick=e=>{const b=e.target.closest('.open');if(b)openM(+b.dataset.i)};
+$('#mx').onclick=closeM;M.onclick=e=>{if(e.target===M)closeM()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+let tt;function toast(t){const e=$('#toast');e.textContent=t;e.style.opacity=1;clearTimeout(tt);tt=setTimeout(()=>e.style.opacity=0,4000)}
+
+$('#form').onsubmit=async e=>{
+ e.preventDefault();
+ const form=e.target, btn=$('#sbtn'), label=btn.textContent;
+ btn.disabled=true;
+ btn.innerHTML='<i class="fa-solid fa-spinner fa-spin mr-2"></i>Sending...';
+ 
+ const formData = new FormData(form);
+ const data = {
+   name: formData.get('name'),
+   email: formData.get('email'),
+   phone: formData.get('phone'),
+   message: formData.get('message'),
+   timestamp: new Date().toISOString()
+ };
+
+ try{
+  await fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(data)
+  });
+  form.reset();
+  toast('Your message has been received! I will get back to you shortly.');
+ }catch(err){
+  toast('Could not send your message. Please try WhatsApp or email instead.');
+ }
+ btn.disabled=false;
+ btn.textContent=label;
+};
+
+$('#burger').onclick=()=>{$('#mnav').classList.toggle('hidden');$('#mnav').classList.toggle('flex')};
+$('#mnav').onclick=e=>{if(e.target.tagName==='A'){$('#mnav').classList.add('hidden');$('#mnav').classList.remove('flex')}};
+$('#yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
